@@ -65,10 +65,8 @@
                 android:id="@+id/location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:focusableInTouchMode="true"
                 android:hint="your location"
-                android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:maxLines="1"
                 android:singleLine="true"
                 android:textColor="@android:color/white" />

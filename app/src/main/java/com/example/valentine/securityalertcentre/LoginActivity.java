@@ -90,18 +90,16 @@ public class LoginActivity extends AppCompatActivity {
                                 // the auth state listener will be notified and logic to handle the
                                 // signed in user can be handled in the listener.
                                 progressBar.setVisibility(View.GONE);
+                                startActivity(new Intent( LoginActivity.this,MainActivity.class));
                                 if (!task.isSuccessful()) {
                                     // there was an error
                                     if (password.length() < 6) {
                                         inputPassword.setError(getString(R.string.minimum_password));
                                     } else {
-                                        startActivity(new Intent( LoginActivity.this,MainActivity.class));
-
                                         Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                                     }
                                 } else {
                                     startActivity(new Intent( LoginActivity.this,MainActivity.class));
-
                                     finish();
                                 }
                             }
