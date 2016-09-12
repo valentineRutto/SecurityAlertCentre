@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "494521702831",
+    "firebase_url": "https://securityalertcentre.firebaseio.com",
+    "project_id": "firebase-securityalertcentre",
+    "storage_bucket": "firebase-securityalertcentre.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494521702831:android:662a9357ba73cbbf",
+        "android_client_info": {
+          "package_name": "com.example.valentine.securityalertcentre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494521702831-0d43102q67so1p25htav30qp12f08f33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUuDs4mwfYE8kmnXZ1LD42BNtUP7fu-Fs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
