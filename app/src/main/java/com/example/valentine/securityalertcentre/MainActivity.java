@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
         alerts = new ArrayList<>();
-        alerts.add("Australia");
-        alerts.add("India");
-        alerts.add("United States of America");
-        alerts.add("Germany");
-        alerts.add("Russia");
+        alerts.add("Medical");
+        alerts.add("Robbery");
+        alerts.add("Fire");
+        alerts.add("Murder");
+        alerts.add("Abduction");
         final RecyclerView.Adapter adapter = new DataAdapter(alerts);
         recyclerView.setAdapter(adapter);
 
