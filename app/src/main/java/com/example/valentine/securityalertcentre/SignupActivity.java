@@ -74,7 +74,7 @@ public class SignupActivity extends AppCompatActivity {
                     return;
                 }
                 if (TextUtils.isEmpty(location)) {
-                    Toast.makeText(getApplicationContext(), "Enter password!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Enter location!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -95,7 +95,6 @@ public class SignupActivity extends AppCompatActivity {
                                 // the auth state listener will be notified and logic to handle the
                                 // signed in user can be handled in the listener.
                                 if (!task.isSuccessful()) {
-                                    startActivity(new Intent(SignupActivity.this, LoginActivity.class));
                                     Toast.makeText(SignupActivity.this, "Authentication failed." + task.getException(),
                                             Toast.LENGTH_SHORT).show();
                                 } else {

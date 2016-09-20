@@ -16,7 +16,8 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/card_recycler_view"
         android:scrollbars="vertical"
-        android:background="@color/bg_login"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

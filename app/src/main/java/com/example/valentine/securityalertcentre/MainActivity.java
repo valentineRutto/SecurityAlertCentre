@@ -1,5 +1,7 @@
 package com.example.valentine.securityalertcentre;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 View child = rv.findChildViewUnder(e.getX(), e.getY());
                 if(child != null && gestureDetector.onTouchEvent(e)) {
                     int position = rv.getChildAdapterPosition(child);
+
                     Toast.makeText(getApplicationContext(), alerts.get(position), Toast.LENGTH_SHORT).show();
                 }
 
