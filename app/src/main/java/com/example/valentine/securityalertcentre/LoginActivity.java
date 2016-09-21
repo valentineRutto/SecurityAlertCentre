@@ -90,7 +90,6 @@ public class LoginActivity extends AppCompatActivity {
                                 // the auth state listener will be notified and logic to handle the
                                 // signed in user can be handled in the listener.
                                 progressBar.setVisibility(View.GONE);
-                                startActivity(new Intent( LoginActivity.this,MainActivity.class));
                                 if (!task.isSuccessful()) {
                                     // there was an error
                                     if (password.length() < 6) {
